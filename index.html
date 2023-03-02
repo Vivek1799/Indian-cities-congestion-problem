@@ -37,6 +37,25 @@
 </style>
 
 <style>
+    .row-container {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      gap: 2em;
+    }
+    
+    .column-container {
+      flex-grow: 1;
+    }
+    
+    @media (max-width: 650px) {
+      .row-container {
+        flex-direction: column;
+      }
+    }
+    </style>
+
+<style>
   .container{
     max-width: 900px;
     display:flex
@@ -566,14 +585,20 @@
 <div class="col-sm-7">
    <p> Bengaluru and Pune are two Indian cities that have been struggling with traffic congestion for quite some time now. One of the reasons for this is the lack of adequate traffic signals in these cities. </p>
    <br>
-   
-   <iframe title="Pune follows Mumbai as the city with the second-highest number of cars per kilometer" aria-label="Interactive line chart" id="datawrapper-chart-3O8Kh" src="https://datawrapper.dwcdn.net/3O8Kh/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="271" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-   </script>
-   <br><br> 
-
-<p>As the population of cities continues to grow and the number of vehicles on the roads increases, high concentration of cars on the roads leads to long travel times, increased air pollution, and road accidents. Despite the efforts of the government to address this issue by promoting public transportation and carpooling, the situation remains challenging. The lack of investment in transportation infrastructure, insufficient parking facilities, and inadequate traffic management systems have only exacerbated the problem. </p>
-<br>
-
+   <div class="row-container">
+    <div class="column-container" style="width: 70%;">
+      <iframe title="Pune follows Mumbai as the city with the second-highest number of cars per kilometer" aria-label="Interactive line chart" id="datawrapper-chart-3O8Kh" src="https://datawrapper.dwcdn.net/3O8Kh/1/" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="271" data-external="1"></iframe>
+      <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+    </div>
+    <div class="column-container" style="width: 50%;">
+      As the population of cities continues to grow and the number of vehicles on the roads increases, high concentration of cars on the roads leads to long travel times, increased air pollution, and road accidents. Despite the efforts of the government to address this issue by promoting public transportation and carpooling, the situation remains challenging. The lack of investment in transportation infrastructure, insufficient parking facilities, and inadequate traffic management systems have only exacerbated the problem.
+    </div>
+  </div>
+  
+<br><br>
+</div>
+<br><br>
+<div class="col-sm-7">
 <iframe title="Share of private vehicles is significantly higher in million plus cities" aria-label="Bullet Bars" id="datawrapper-chart-2TjCL" src="https://datawrapper.dwcdn.net/2TjCL/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="207" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
 <br><br>
@@ -583,7 +608,7 @@
             </div>
         </div>
     </div>
-
+   
   
     <!-- This is my footer -->
     <footer class="footer">
